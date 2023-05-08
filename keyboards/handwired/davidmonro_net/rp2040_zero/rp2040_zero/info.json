@@ -1,0 +1,44 @@
+{
+    "keyboard_name": "RP2040-zero sleepwake",
+    "url": "",
+    "manufacturer": "davidmonro.net",
+    "maintainer": "davidm@davidmonro.net",
+    "usb": {
+        "vid": "0xFEED",
+        "pid": "0xDA01",
+        "device_version": "0.0.1"
+    },
+    "diode_direction": "COL2ROW",
+    "features": {
+        "bootmagic": false,
+        "mousekey": false,
+        "extrakey": true,
+        "console": false,
+        "command": false,
+        "nkro": false,
+        "backlight": false,
+        "rgblight": true,
+        "audio": false
+    },
+    "processor": "RP2040",
+    "bootloader": "rp2040",
+    "matrix_pins": {
+        "cols": ["GP4"],
+        "rows": ["GP5"]
+    },
+    "rgblight": {
+        "led_count": 1
+    },
+    "ws2812": {
+        "pin": "GP16",
+        "driver": "vendor"
+    },
+    "community_layouts": ["ortho_1x1"],
+    "layouts": {
+        "LAYOUT_ortho_1x1": {
+            "layout": [
+                {"x": 0, "y": 0, "matrix": [0, 0]}
+            ]
+        }
+    }
+}
